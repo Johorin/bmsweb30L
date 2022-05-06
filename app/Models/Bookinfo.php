@@ -61,4 +61,20 @@ class Bookinfo extends Model
     public function deleteBook($isbn) {
         Bookinfo::where('isbn', '=', $isbn)->delete();
     }
+    
+    /*
+     * 関数名：searchBook
+     * 引数：$isbn, $title, $price
+     * 戻り値：Collectionクラス
+     * 呼び出し元：書籍検索機能（SearchController）
+     * 機能：引数の各データを元にDBのbookinfoテーブルから該当書籍データの絞込み検索処理を行う。
+     */
+    public function searchBook($isbn, $title, $price) {
+        $searchBook = Bookinfo::where('isbn', 'like', '%' . $isbn . '%');
+        $searchBook->where('title', 'like', '%' . $title . '%');
+        $searchBook->where('price', 'like', '%' . $price . '%');
+        $searchBook->get();
+        
+        return $searchBook;
+    }
 }
