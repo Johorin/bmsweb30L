@@ -14,10 +14,9 @@
     	<hr style="border: 1px solid black;">
     </header>
     <main>
-		<center><br>
-			<p><a href="/list">【書籍一覧】</a></p>
-			<p><a href="/insert">【書籍登録】</a></p>
-		</center>
+		<br>
+		<p align="center"><a href="/list?transition=menu">【書籍一覧】</a></p>
+		<p align="center"><a href="/insert?transition=menu">【書籍登録】</a></p>
     </main>
     </body>
 </html>
