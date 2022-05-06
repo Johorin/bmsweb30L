@@ -28,7 +28,7 @@ use Illuminate\Support\Facades\Route;
 
 //1.トップページ（メニュー画面）への遷移
 Route::get('/', function() {
-    view('menu');
+    return view('menu');
 });
 
 //2.書籍一覧画面への遷移
@@ -36,7 +36,7 @@ Route::get('/list', 'ListController@index');
 
 //3.書籍登録画面（初期画面）への遷移
 Route::get('/insert', function() {
-    view('insert');
+    return view('insert');
 });
 
 //4.書籍登録画面（登録ボタンから遷移）への遷移
@@ -44,7 +44,7 @@ Route::post('/insert', 'InsertController@insert');
 
 //5.書籍登録画面へリダイレクト
 Route::get('/insert_redirect', function() {
-    redirect('/insert');
+    return redirect('/insert');
 });
 
 //6.書籍詳細画面への遷移
@@ -64,7 +64,7 @@ Route::post('/search', 'SearchController@index');
 
 //11.一覧画面へリダイレクト
 Route::get('/list_redirect', function() {
-    redirect('/list');
+    return redirect('/list');
 });
 
 //12.エラー処理
