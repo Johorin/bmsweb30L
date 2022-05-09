@@ -1,7 +1,3 @@
-<?php 
-
-?>
-
 <!-- レイアウトの継承 -->
 @extends('layouts.bms')
 
@@ -76,4 +72,3 @@
     @endif
 	</center>
 @endsection
-

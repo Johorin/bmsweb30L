@@ -21,7 +21,7 @@ class InsertController extends Controller
         $rules = [
             'isbn' => 'required|unique: bookinfo, isbn',    //入力されているか｜重複していないか
             'title' => 'required',                          //入力されているか
-            'price' => 'required|numeric',                  //入力されているか｜数字か
+            'price' => 'required|numeric',                  //入力されているか｜数値か
         ];
         
         //エラーの際に表示させるメッセージを設定
@@ -31,15 +31,21 @@ class InsertController extends Controller
             'title.required' => 'タイトルが未入力の為、書籍登録処理は行えませんでした。',
             'price.required' => '価格が未入力の為、書籍登録処理は行えませんでした。',
             'price.numeric' => '価格の値が不正の為、書籍登録処理は行えませんでした。',
+            //追加ルールのメッセージ設定
             'price.min' => '価格が0未満の為、書籍登録処理は行えませんでした。',
         ];
         
         //Validatorインスタンスを作成
         $validator = Validator::make($request->all(), $rules, $errMsgs);
         
+        //検証ルール追加（priceが整数だったらさらにその数値が0以上かチェック）
+        $validator->sometimes('price', 'min:0', function($input) {
+            return is_numeric($input->price);
+        });
+        
         //バリデーションのエラーチェック
         if($validator->fails()) {
-            //エラー項目が見つかればエラー内容とともにerror.blade.phpに遷移
+            //エラー項目が見つかればerror.blade.phpに遷移し、エラー内容を$errorsとして送る
             return redirect('/error')
                 ->withErrors($validator);
         }
