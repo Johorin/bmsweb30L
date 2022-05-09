@@ -10,11 +10,13 @@
 		@section('header')
     	@show
     	<h3 align="center">@yield('headline')</h3>
-    	<hr style="border: 1px solid black;">
+    	@yield('header_bottomLine')
     </header>
     @section('main')
     <main>
+    	<center>
     	@show
+    	</center>
     </main>
     <footer>
     <br><br><br>

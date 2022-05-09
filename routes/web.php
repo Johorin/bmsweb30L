@@ -67,8 +67,10 @@ Route::get('/list_redirect', function() {
     return redirect('/list');
 });
 
-//12.エラー処理
-Route::get('/error', 'App\Http\Controllers\DeleteController@index');
+//12.エラーの表示
+Route::get('/error', function() {
+    return view('error');
+});
 
 
 

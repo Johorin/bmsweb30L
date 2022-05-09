@@ -20,6 +20,11 @@
 <!-- ページの見出し -->
 @section('headline', '書籍登録')
 
+<!-- ヘッダーの下線（黒）を描く -->
+@section('header_bottomLine')
+<hr style="border: 1px solid black;">
+@endsection
+
 <!-- メイン -->
 @section('main')
 	@parent
@@ -66,8 +71,8 @@
     	<br>
     	<p>上記データを登録しました。</p>
     	<br><br>
-    	<a href="./list.php">書籍一覧へ戻る</a>
-    	<a href="./insert.php">続けて登録する</a>
+    	<a href="/list">書籍一覧へ戻る</a>
+    	<a href="/insert">続けて登録する</a>
     @endif
 	</center>
 @endsection
