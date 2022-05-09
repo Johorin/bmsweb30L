@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!-- レイアウトの継承 -->
 @extends('layouts.bms')
 
@@ -11,8 +8,8 @@
 @section('header')
 	@parent
 	<div class="float-left" style="position: absolute; top: 83px; left: 20px;">
-		<a href="./menu.php" style="margin: 0 20px 0 0;">[メニュー]</a>
-		<a href="./insert.php">[書籍登録]</a>
+		<a href="/" style="margin: 0 20px 0 0;">[メニュー]</a>
+		<a href="/insert">[書籍登録]</a>
 	</div>
 @endsection
 

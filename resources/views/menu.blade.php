@@ -1,17 +1,8 @@
-<?php
-
-?>
 <!-- レイアウトの継承 -->
 @extends('layouts.bms')
 
 <!-- ページタイトル -->
 @section('title', 'メニュー画面')
-
-<!-- ヘッダーとナビゲーションメニュー -->
-@section('header')
-	@parent
-    <h3 align="center">MENU</h3>
-@endsection
 
 <!-- ページの見出し -->
 @section('headline', 'MENU')

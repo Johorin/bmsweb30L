@@ -5,9 +5,9 @@
 	</head>
     <body>
 	<header>
-		@section('header')
     	<h2 align="center">書籍販売システムWeb版 Ver.1.0</h2>
     	<hr style="border: 2px solid blue;">
+		@section('header')
     	@show
     	<h3 align="center">@yield('headline')</h3>
     	<hr style="border: 1px solid black;">
