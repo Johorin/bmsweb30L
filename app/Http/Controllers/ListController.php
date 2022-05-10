@@ -11,10 +11,11 @@ class ListController extends Controller
     public function index(Request $request) {
         if(isset($request->transition)) {
             switch($request->transition) {
-                //メニュー画面、書籍一覧リンク、全検索ボタンから遷移してきたときには全検索処理
+                //メニュー画面、書籍一覧リンク、全検索ボタン（、書籍更新処理後画面）から遷移してきたときには全検索処理
                 case 'menu':
                 case 'list':
                 case 'searchAll':
+                case 'updated':
                     //isbn昇順の全検索結果（Collection型）を変数resultに格納
                     $result = Bookinfo::orderby('isbn', 'asc')->get();
                     break;

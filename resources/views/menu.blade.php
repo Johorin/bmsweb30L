@@ -7,6 +7,11 @@
 <!-- ページの見出し -->
 @section('headline', 'MENU')
 
+<!-- ヘッダーの下線（黒）を描く -->
+@section('header_bottomLine')
+<hr style="border: 1px solid black;">
+@endsection
+
 <!-- メイン -->
 @section('main')
 	@parent
