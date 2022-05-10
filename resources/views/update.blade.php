@@ -10,7 +10,7 @@
 	<div class="nav" style="position: absolute; top: 83px; left: 20px;">
 		<a href="/" style="margin: 0 20px 0 0;">[メニュー]</a>
 		<a href="/insert" style="margin: 0 20px 0 0;">[書籍登録]</a>
-		<a href="/list">[書籍一覧]</a>
+		<a href="/list?transition=menu">[書籍一覧]</a>
 	</div>
 @endsection
 

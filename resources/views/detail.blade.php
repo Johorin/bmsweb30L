@@ -2,19 +2,20 @@
 @extends('layouts.bms')
 
 <!-- ページタイトル -->
-@section('title', '書籍登録画面')
+@section('title', '書籍詳細画面')
 
 <!-- ヘッダーとナビゲーションメニュー -->
 @section('header')
 	@parent
 	<div class="float-left" style="position: absolute; top: 83px; left: 20px;">
 		<a href="/" style="margin: 0 20px 0 0;">[メニュー]</a>
-		<a href="/list?transition=menu">[書籍一覧]</a>
+		<a href="/list?transition=menu" style="margin: 0 20px 0 0;">[書籍一覧]</a>
+		<a href="/insert">[書籍登録]</a>
 	</div>
 @endsection
 
 <!-- ページの見出し -->
-@section('headline', '書籍登録')
+@section('headline', '書籍詳細')
 
 <!-- ヘッダーの下線（黒）を描く -->
 @section('header_bottomLine')
