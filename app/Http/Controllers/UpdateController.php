@@ -11,7 +11,8 @@ use Illuminate\Support\Facades\Validator;
 class UpdateController extends Controller
 {
     //GET送信でアクセスする場合（list.blade.php、detail.blade.phpからの遷移）
-    public function index(Request $request) {//バリデーションの検証ルールを設定
+    public function index(Request $request) {
+        //バリデーションの検証ルールを設定
         $rules = [
             'isbn' => 'exists:bookinfo,isbn'    //そのデータが既に存在しているか（空白入れたらエラーになるので注意）
         ];
