@@ -28,12 +28,14 @@
 	<!-- フォーム部分 -->
 	<div class="forms" style="display: inline-flex;">
     	<form action="/search" method="post">
+    		@csrf
     		　ISBN<input type="text" name="isbn">
     		　TITLE<input type="text" name="title">
     		　価格<input type="text" name="price">
     		　<input type="submit" name="listButton" value="検索">
     	</form>
     	<form action="/list" method="get">
+    		@csrf
     		<!-- hiddenで遷移情報transitionも送る -->
     		<input type="hidden" name="transition" value="searchAll">
     		　<input type="submit" value="全件表示">

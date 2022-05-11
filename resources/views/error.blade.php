@@ -12,5 +12,5 @@
 	<p>{{$error}}</p>
 	@endforeach
 	<br><br>
-	<a href="/list">[一覧表示に戻る]</a>
+	<a href="/list?transition=menu">[一覧表示に戻る]</a>
 @endsection

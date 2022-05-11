@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+//DBクラスを使用する宣言
+use Illuminate\Support\Facades\DB;
 
 class Bookinfo extends Model
 {
@@ -70,10 +72,11 @@ class Bookinfo extends Model
      * 機能：引数の各データを元にDBのbookinfoテーブルから該当書籍データの絞込み検索処理を行う。
      */
     public function searchBook($isbn, $title, $price) {
-        $searchBook = Bookinfo::where('isbn', 'like', '%' . $isbn . '%');
-        $searchBook->where('title', 'like', '%' . $title . '%');
-        $searchBook->where('price', 'like', '%' . $price . '%');
-        $searchBook->get();
+        $searchBook = DB::table('bookinfo')
+        ->where('isbn', 'like', '%' . $isbn . '%')
+        ->where('title', 'like', '%' . $title . '%')
+        ->where('price', 'like', '%' . $price . '%')
+        ->get();
         
         return $searchBook;
     }
