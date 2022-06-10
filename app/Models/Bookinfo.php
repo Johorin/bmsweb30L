@@ -72,12 +72,12 @@ class Bookinfo extends Model
      * 機能：引数の各データを元にDBのbookinfoテーブルから該当書籍データの絞込み検索処理を行う。
      */
     public function searchBook($isbn, $title, $price) {
-        $searchBook = DB::table('bookinfo')
-        ->where('isbn', 'like', '%' . $isbn . '%')
-        ->where('title', 'like', '%' . $title . '%')
-        ->where('price', 'like', '%' . $price . '%')
-        ->get();
-        
+        $searchBook = DB::table('bookinfo');
+        $searchBook->where('isbn', 'like', '%' . $isbn . '%');
+        $searchBook->where('title', 'like', '%' . $title . '%');
+        $searchBook->where('price', 'like', '%' . $price . '%');
+        $searchBook->get();
+        dd($searchBook);
         return $searchBook;
     }
 }
