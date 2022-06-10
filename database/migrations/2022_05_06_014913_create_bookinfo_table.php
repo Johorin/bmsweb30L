@@ -14,8 +14,9 @@ class CreateBookinfoTable extends Migration
     public function up()
     {
         Schema::create('bookinfo', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->string('isbn', 30)->primary();    //isbn varchar(20) primary key
+            $table->string('title', 100);             //title varcahr(100)
+            $table->integer('price');                 //price integer
         });
     }
 
