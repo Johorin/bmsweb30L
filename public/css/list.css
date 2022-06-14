@@ -1,0 +1,23 @@
+.navMenu {
+  position: absolute;
+  top: 65px;
+  left: 20px;
+}
+.navMenu ul {
+  display: flex;
+}
+.navMenu ul li:first-child {
+  margin-right: 20px;
+}
+
+.forms {
+  display: inline-flex;
+}
+
+th {
+  height: 30px;
+  width: 25vw;
+  background-color: teal;
+  color: white;
+  vertical-align: middle;
+}
