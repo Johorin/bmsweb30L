@@ -16,3 +16,4 @@ mix.js('resources/js/app.js', 'public/js');
     //.sourceMaps();
 mix.sass('resources/sass/layout.scss', 'public/css').sourceMaps();
 mix.sass('resources/sass/menu.scss', 'public/css').sourceMaps();
+mix.sass('resources/sass/list.scss', 'public/css').sourceMaps();

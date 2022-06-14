@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.navMenu {
+	position: absolute;
+	top: 55px;
+	left: 20px;
+	ul:first-child {
+		margin-right: 20px;;
+	}
+}
+
+.forms {
+	display: inline-flex;
+}
+
+th {
+	width: 25vw;
+	background-color: teal;
+}

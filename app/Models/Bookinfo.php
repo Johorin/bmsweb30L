@@ -80,4 +80,9 @@ class Bookinfo extends Model
         dd($searchBook);
         return $searchBook;
     }
+    
+    //orderinfoテーブルに対するリレーションを定義
+    public function orders() {
+        return $this->hasMany('App\Models\Orderinfo');  //一対多
+    }
 }

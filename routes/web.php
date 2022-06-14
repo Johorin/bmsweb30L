@@ -73,6 +73,9 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/error', function() {
         return view('error');
     });
+    
+    //ログイン後はメニュー画面に遷移
+    Route::get('/home', 'App\Http\Controllers\HomeController@index');
 });
 
 
@@ -85,5 +88,3 @@ Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-//ログイン後はメニュー画面に遷移
-Route::get('/home', 'App\Http\Controllers\HomeController@index');

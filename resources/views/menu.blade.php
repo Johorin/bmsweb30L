@@ -1,6 +1,11 @@
 <!-- レイアウトの継承 -->
 @extends('layouts.bms')
 
+<!-- このページ専用のCSSを読み込む -->
+@section('applyCss')
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/menu.css') }}">
+@endsection
+
 <!-- ページタイトル -->
 @section('title', 'メニュー画面')
 
@@ -14,6 +19,7 @@
 
 <!-- メイン -->
 <!-- ログイン中の権限によって画面表示を変更 -->
+<!-- 一般ユーザーの表示 -->
 @if(Auth::user()->authority === 1)
     @section('main')
     	@parent
@@ -25,6 +31,7 @@
 		<p><a href="/changePassword">【パスワード変更】</a></p>
 		<p><a href="/logout">【ログアウト】</a></p>
     @endsection
+<!-- 管理者の表示 -->
 @elseif(Auth::user()->authority === 2)
     @section('main')
     	@parent

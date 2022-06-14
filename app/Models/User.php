@@ -42,4 +42,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    //orderinfoテーブルに対するリレーションを定義
+    public function orders() {
+        return $this->hasMany('App\Models\Orderinfo');  //一対多
+    }
 }

@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/reset.css') }}">
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/layout.css') }}">
-		<link rel="stylesheet" type="text/css" href="{{ asset('css/menu.css') }}">
+		@yield('applyCss')
 		<title>@yield('title')</title>
 	</head>
     <body>
