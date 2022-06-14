@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+*, body, html {
+	text-align: center;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+	margin: 0;
+	line-height: 20px;
+}
+
+.titleWrapper {
+	background-color: rgb(220,220,220);
+	h2#title {
+		font-size: 1.5rem;
+		font-weight: bold;
+		line-height: 50px;
+	}
+}
+
+#navSpace {
+	height: 50px;
+	background-color: white;
+    display: flex;
+    justify-content: center; /*左右中央揃え*/
+    align-items: center;     /*上下中央揃え*/
+	.loginInfo {
+		position: absolute;
+		top: 55px;
+		right: 60px;
+	}
+}
+
+#line2 {
+	margin-bottom: 10px;
+}
+
+footer {
+	width: 100vw;
+	height: 50px;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+}

@@ -1,27 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="{{ asset('css/reset.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('css/layout.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('css/menu.css') }}">
 		<title>@yield('title')</title>
 	</head>
     <body>
-	<header>
-    	<h2 align="center">書籍販売システムWeb版 Ver.1.0</h2>
-    	<hr style="border: 2px solid blue;">
-		@section('header')
-    	@show
-    	<h3 align="center">@yield('headline')</h3>
-    	@yield('header_bottomLine')
-    </header>
-    @section('main')
-    <main>
-    	<center>
-    	@show
-    	</center>
-    </main>
-    <footer>
-    <br><br><br>
-    	<hr style="border: 1px solid blue;">
-    	<p>Copyright (C) 20YY All Rights Reserved.</p>
-    </footer>
+    	<header>
+    		<div class="titleWrapper">
+        		<h2 id="title">書籍管理システムLaravel版 Ver3.0</h2>
+    		</div>
+        	<div id="navSpace">
+        		@section('header')
+            	@show
+            	<h3 id="title">@yield('headline')</h3>
+            	<div class="loginInfo">
+            		<p>名前：{{ Auth::user()->name }}</p>
+            		<p>権限：{{ (Auth::user()->authority === 1) ? '一般ユーザー' : '管理者' }}</p>
+            	</div>
+        	</div>
+            @yield('header_bottomLine')
+        </header>
+        @section('main')
+        <main>
+        	@show
+        </main>
+        <br><br><br>
+        <footer>
+        	<hr id="line2">
+        	<p>Copyright (C) 2022 All Rights Reserved.</p>
+        </footer>
     </body>
 </html>

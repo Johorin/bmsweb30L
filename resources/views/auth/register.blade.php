@@ -61,6 +61,17 @@
                             </div>
                         </div>
 
+                        <div class="row mb-3">
+                            <label for="authority" class="col-md-4 col-form-label text-md-end">{{ __('Authority') }}</label>
+
+                            <div class="col-md-6">
+                                <select name="authority" id="authority" class="form-control @error('authority') is-invalid @enderror" required>
+                                	<option value="1" selected>一般ユーザー</option>
+                                	<option value="2">管理者</option>
+                                </select>
+                            </div>
+                        </div>
+                        
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">

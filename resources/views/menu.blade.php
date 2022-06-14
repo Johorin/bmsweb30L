@@ -9,13 +9,34 @@
 
 <!-- ヘッダーの下線（黒）を描く -->
 @section('header_bottomLine')
-<hr style="border: 1px solid black;">
+<hr>
 @endsection
 
 <!-- メイン -->
-@section('main')
-	@parent
-	<br>
-	<p align="center"><a href="/list?transition=menu">【書籍一覧】</a></p>
-	<p align="center"><a href="/insert?transition=menu">【書籍登録】</a></p>
-@endsection
+<!-- ログイン中の権限によって画面表示を変更 -->
+@if(Auth::user()->authority === 1)
+    @section('main')
+    	@parent
+		<br><br>
+		<p><a href="/list">【書籍一覧】</a></p>
+		<p><a href="/showCart">【カート状況確認】</a></p>
+		<p><a href="/orderHistory">【購入履歴】</a></p>
+		<br>
+		<p><a href="/changePassword">【パスワード変更】</a></p>
+		<p><a href="/logout">【ログアウト】</a></p>
+    @endsection
+@elseif(Auth::user()->authority === 2)
+    @section('main')
+    	@parent
+		<br><br>
+		<p><a href="/list">【書籍一覧】</a></p>
+		<p><a href="/insert">【書籍登録】</a></p>
+		<p><a href="/insertIniData">【初期データ登録（データがない場合のみ）】</a></p>
+		<p><a href="/orderStatus">【購入状況確認】</a></p>
+		<p><a href="/showSalesByMonth">【売上げ状況】</a></p>
+		<p><a href="/insertUser">【ユーザー登録】</a></p>
+		<p><a href="/listUser">【ユーザー一覧】</a></p>
+		<p><a href="/changePassword">【パスワード変更】</a></p>
+		<p><a href="/logout">【ログアウト】</a></p>
+    @endsection
+@endif
