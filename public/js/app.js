@@ -995,6 +995,28 @@ eval("/* module decorator */ module = __webpack_require__.nmd(module);\nvar __WE
 
 /***/ }),
 
+/***/ "./resources/sass/deleteUser.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/deleteUser.scss ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9kZWxldGVVc2VyLnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3MvZGVsZXRlVXNlci5zY3NzPzdlOTUiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/deleteUser.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/listUser.scss":
+/*!**************************************!*\
+  !*** ./resources/sass/listUser.scss ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9saXN0VXNlci5zY3NzLmpzIiwibWFwcGluZ3MiOiI7QUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9zYXNzL2xpc3RVc2VyLnNjc3M/NmUxYyJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/sass/listUser.scss\n");
+
+/***/ }),
+
 /***/ "./resources/sass/layout.scss":
 /*!************************************!*\
   !*** ./resources/sass/layout.scss ***!
@@ -1036,6 +1058,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9kZXRhaWwuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9kZXRhaWwuc2Nzcz9hMDBhIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/detail.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/update.scss":
+/*!************************************!*\
+  !*** ./resources/sass/update.scss ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy91cGRhdGUuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy91cGRhdGUuc2Nzcz8xODczIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/update.scss\n");
 
 /***/ }),
 
@@ -1183,10 +1216,13 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
+/******/ 			"css/update": 0,
 /******/ 			"css/detail": 0,
 /******/ 			"css/list": 0,
 /******/ 			"css/menu": 0,
-/******/ 			"css/layout": 0
+/******/ 			"css/layout": 0,
+/******/ 			"css/listUser": 0,
+/******/ 			"css/deleteUser": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1236,11 +1272,14 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/detail","css/list","css/menu","css/layout"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/detail","css/list","css/menu","css/layout"], () => (__webpack_require__("./resources/sass/layout.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/detail","css/list","css/menu","css/layout"], () => (__webpack_require__("./resources/sass/menu.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/detail","css/list","css/menu","css/layout"], () => (__webpack_require__("./resources/sass/list.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/detail","css/list","css/menu","css/layout"], () => (__webpack_require__("./resources/sass/detail.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/layout.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/menu.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/list.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/detail.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/update.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/deleteUser.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/listUser.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

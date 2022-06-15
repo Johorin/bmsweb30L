@@ -18,3 +18,6 @@ mix.sass('resources/sass/layout.scss', 'public/css').sourceMaps();
 mix.sass('resources/sass/menu.scss', 'public/css').sourceMaps();
 mix.sass('resources/sass/list.scss', 'public/css').sourceMaps();
 mix.sass('resources/sass/detail.scss', 'public/css').sourceMaps();
+mix.sass('resources/sass/update.scss', 'public/css').sourceMaps();
+mix.sass('resources/sass/deleteUser.scss', 'public/css').sourceMaps();
+mix.sass('resources/sass/listUser.scss', 'public/css').sourceMaps();

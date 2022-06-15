@@ -1,0 +1,29 @@
+.forms {
+  display: inline-flex;
+}
+
+table,
+tr,
+th,
+td {
+  vertical-align: middle;
+}
+
+th {
+  height: 30px;
+  width: 25vw;
+  background-color: teal;
+  color: white;
+  vertical-align: middle;
+}
+
+td {
+  height: 30px;
+}
+td input {
+  height: 26px;
+}
+
+td a:first-child {
+  margin-right: 20px;
+}

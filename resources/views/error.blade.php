@@ -1,3 +1,6 @@
+<?php 
+dd(isset($errMsg));
+?>
 <!-- レイアウトの継承 -->
 @extends('layouts.bms')
 
@@ -9,8 +12,11 @@
 	<br><br>
 	<h2>●●エラー●●</h2>
 	@foreach($errors->all() as $error)
-	<p>{{$error}}</p>
+		<p>{{$error}}</p>
 	@endforeach
+	@if(isset($errMsg))
+		<p>{{$errMsg}}</p>
+	@endif
 	<br><br>
 	<a href="/list?transition=menu">[一覧表示に戻る]</a>
 @endsection

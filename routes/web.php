@@ -53,7 +53,8 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/detail', 'App\Http\Controllers\DetailController@index');
     
     //7.書籍更新画面（初期画面）への遷移
-    Route::get('/update', 'App\Http\Controllers\UpdateController@index');
+    //     Route::get('/update', 'App\Http\Controllers\UpdateController@index');
+    Route::get('/update', 'App\Http\Controllers\UpdateController@index')->middleware('rejectaccess');
     
     //8.書籍更新画面（変更完了ボタンから遷移）への遷移
     Route::post('/update', 'App\Http\Controllers\UpdateController@update');
@@ -74,8 +75,11 @@ Route::group(['middleware' => ['auth']], function(){
         return view('error');
     });
     
+    /* 3.0 */
     //ログイン後はメニュー画面に遷移
     Route::get('/home', 'App\Http\Controllers\HomeController@index');
+    
+    Route::get('/listUser', 'App\Http\Controllers\ListUserController@index');
 });
 
 

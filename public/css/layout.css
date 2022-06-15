@@ -8,6 +8,10 @@
   line-height: 20px;
 }
 
+input {
+  text-align: left;
+}
+
 .titleWrapper {
   background-color: rgb(220, 220, 220);
 }

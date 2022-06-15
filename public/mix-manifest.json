@@ -1,7 +1,10 @@
 {
     "/js/app.js": "/js/app.js",
+    "/css/update.css": "/css/update.css",
     "/css/detail.css": "/css/detail.css",
     "/css/list.css": "/css/list.css",
     "/css/menu.css": "/css/menu.css",
-    "/css/layout.css": "/css/layout.css"
+    "/css/layout.css": "/css/layout.css",
+    "/css/listUser.css": "/css/listUser.css",
+    "/css/deleteUser.css": "/css/deleteUser.css"
 }

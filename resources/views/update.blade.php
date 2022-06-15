@@ -1,16 +1,25 @@
 <!-- レイアウトの継承 -->
 @extends('layouts.bms')
 
+<!-- このページ専用のCSSを読み込む -->
+@section('applyCss')
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/update.css') }}">
+@endsection
+
 <!-- ページタイトル -->
-@section('title', '書籍更新画面')
+@section('title', '書籍変更画面')
 
 <!-- ヘッダーとナビゲーションメニュー -->
 @section('header')
 	@parent
-	<div class="nav" style="position: absolute; top: 83px; left: 20px;">
-		<a href="/" style="margin: 0 20px 0 0;">[メニュー]</a>
-		<a href="/insert" style="margin: 0 20px 0 0;">[書籍登録]</a>
-		<a href="/list?transition=menu">[書籍一覧]</a>
+	<div class="navMenu">
+    	<nav>
+    		<ul>
+    			<li><a href="/home">[メニュー]</a></li>
+    			<li><a href="/insert">[書籍登録]</a></li>
+    			<li><a href="/list">[書籍一覧]</a></li>
+    		</ul>
+    	</nav>
 	</div>
 @endsection
 
@@ -19,7 +28,7 @@
 
 <!-- ヘッダーの下線（黒）を描く -->
 @section('header_bottomLine')
-<hr style="border: 1px solid black;">
+<hr>
 @endsection
 
 <!-- メイン -->

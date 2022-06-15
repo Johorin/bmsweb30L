@@ -1,0 +1,12 @@
+table th {
+  width: 180px;
+  background-color: teal;
+  text-align: left;
+  padding-left: 20px;
+}
+table td {
+  width: 200px;
+}
+table td#email {
+  white-space: nowrap;
+}
