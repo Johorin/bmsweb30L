@@ -10,18 +10,35 @@
 @section('title', '書籍詳細画面')
 
 <!-- ヘッダーとナビゲーションメニュー -->
-@section('header')
-	@parent
-	<div class="navMenu">
-    	<nav>
-    		<ul>
-    			<li><a href="/home">[メニュー]</a></li>
-    			<li><a href="/list">[書籍一覧]</a></li>
-    			<li><a href="/insert">[書籍登録]</a></li>
-    		</ul>
-    	</nav>
-	</div>
-@endsection
+<!-- ログイン中の権限によって画面表示を変更 -->
+<!-- 一般ユーザーの表示 -->
+@if(Auth::user()->authority === 1)
+    @section('header')
+    	@parent
+    	<div class="navMenu">
+        	<nav>
+        		<ul>
+        			<li><a href="/home">[メニュー]</a></li>
+        			<li><a href="/list">[書籍一覧]</a></li>
+        		</ul>
+        	</nav>
+    	</div>
+    @endsection
+<!-- 管理者の表示 -->
+@elseif(Auth::user()->authority === 2)
+    @section('header')
+    	@parent
+    	<div class="navMenu">
+        	<nav>
+        		<ul>
+        			<li><a href="/home">[メニュー]</a></li>
+        			<li><a href="/list">[書籍一覧]</a></li>
+        			<li><a href="/insert">[書籍登録]</a></li>
+        		</ul>
+        	</nav>
+    	</div>
+    @endsection
+@endif
 
 <!-- ページの見出し -->
 @section('headline', '書籍詳細情報')
@@ -32,32 +49,56 @@
 @endsection
 
 <!-- メイン -->
-@section('main')
-	@parent
-	<br><br>
-	<div class="forms">
-		<form action="/update" method="get">
-			<input type="hidden" name="isbn" value="{{$detailBook[0]['isbn']}}">
-			<input type="submit" value="変更" id="updateButton">
-		</form>
-		<form action="/delete" method="post">
-			<input type="hidden" name="isbn" value="{{$detailBook[0]['isbn']}}">
-			<input type="submit" name="detailButton" value="削除">
-		</form>
-	</div>
-	<br><br><br>
-	<table>
-		<tr>
-			<th>ISBN</th>
-			<td>{{$detailBook[0]['isbn']}}</td>
-		</tr>
-		<tr>
-			<th>TITLE</th>
-			<td>{{$detailBook[0]['title']}}</td>
-		</tr>
-		<tr>
-			<th>価格</th>
-			<td>{{$detailBook[0]['price']}}円</td>
-		</tr>
-	</table>
-@endsection
+<!-- ログイン中の権限によって画面表示を変更 -->
+<!-- 一般ユーザーの表示 -->
+@if(Auth::user()->authority === 1)
+    @section('main')
+    	@parent
+    	<br><br><br>
+    	<table>
+    		<tr>
+    			<th>ISBN</th>
+    			<td>{{$detailBook[0]['isbn']}}</td>
+    		</tr>
+    		<tr>
+    			<th>TITLE</th>
+    			<td>{{$detailBook[0]['title']}}</td>
+    		</tr>
+    		<tr>
+    			<th>価格</th>
+    			<td>{{$detailBook[0]['price']}}円</td>
+    		</tr>
+    	</table>
+    @endsection
+<!-- 管理者の表示 -->
+@elseif(Auth::user()->authority === 2)
+    @section('main')
+    	@parent
+    	<br><br>
+    	<div class="forms">
+    		<form action="/update" method="get">
+    			<input type="hidden" name="isbn" value="{{$detailBook[0]['isbn']}}">
+    			<input type="submit" value="変更" id="updateButton">
+    		</form>
+    		<form action="/delete" method="post">
+    			<input type="hidden" name="isbn" value="{{$detailBook[0]['isbn']}}">
+    			<input type="submit" name="detailButton" value="削除">
+    		</form>
+    	</div>
+    	<br><br><br>
+    	<table>
+    		<tr>
+    			<th>ISBN</th>
+    			<td>{{$detailBook[0]['isbn']}}</td>
+    		</tr>
+    		<tr>
+    			<th>TITLE</th>
+    			<td>{{$detailBook[0]['title']}}</td>
+    		</tr>
+    		<tr>
+    			<th>価格</th>
+    			<td>{{$detailBook[0]['price']}}円</td>
+    		</tr>
+    	</table>
+    @endsection
+@endif
