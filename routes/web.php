@@ -88,3 +88,5 @@ Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+//ログアウト時の遷移
+Route::get('/logout', 'App\Http\Controllers\LogoutController@index');

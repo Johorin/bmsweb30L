@@ -1,17 +1,12 @@
-.navMenu {
-  position: absolute;
-  top: 65px;
-  left: 20px;
-}
-.navMenu ul {
-  display: flex;
-}
-.navMenu ul li:first-child {
-  margin-right: 20px;
-}
-
 .forms {
   display: inline-flex;
+}
+
+table,
+tr,
+th,
+td {
+  vertical-align: middle;
 }
 
 th {
@@ -20,4 +15,11 @@ th {
   background-color: teal;
   color: white;
   vertical-align: middle;
+}
+
+td {
+  height: 30px;
+}
+td input {
+  height: 26px;
 }

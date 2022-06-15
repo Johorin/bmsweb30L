@@ -24,15 +24,33 @@
     display: flex;
     justify-content: center; /*左右中央揃え*/
     align-items: center;     /*上下中央揃え*/
+	.navMenu {
+		position: absolute;
+		top: 65px;
+		left: 20px;
+		ul {
+			display: flex;
+			li:not(:last-child) {
+				margin-right: 20px;
+			}
+		}
+	}
 	.loginInfo {
 		position: absolute;
 		top: 55px;
 		right: 60px;
+		p {
+			text-align: left;
+		}
 	}
 }
 
 #line2 {
 	margin-bottom: 10px;
+}
+
+table {
+	margin: 0 auto;
 }
 
 footer {

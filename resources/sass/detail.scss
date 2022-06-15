@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.forms {
+	display: inline-flex;
+}
+
+#updateButton {
+	margin-right: 60px;
+}
+
+table {
+	th {
+		width: 100px;
+		height: 30px;
+		vertical-align: middle;
+		//padding: 2px 20px 2px 5px;
+		background-color: teal;
+		color: white;
+	}
+	td {
+		width: 100px;
+		vertical-align: middle;;
+	}
+}
