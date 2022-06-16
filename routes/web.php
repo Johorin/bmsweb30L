@@ -77,6 +77,10 @@ Route::group(['middleware' => ['auth']], function(){
     /*** 3.0 ***/
     //ログイン後はメニュー画面に遷移
     Route::get('/home', 'App\Http\Controllers\HomeController@index');
+    //カート状況確認画面への遷移
+    Route::get('/showCart', 'App\Http\Controllers\ShowCartController@index');
+    //購入履歴画面への遷移
+    Route::get('/orderHistory', 'App\Http\Controllers\OrderHistoryController@index');
     //パスワード変更画面への遷移
     Route::get('/insertUser', 'App\Http\Controllers\InsertUserController@index');
     //ログアウト画面へのの遷移
