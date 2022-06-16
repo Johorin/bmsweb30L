@@ -21,6 +21,13 @@ class AccessBlock
         //権限が管理者でないと見れないページ群
         $pages = [
             'update',
+            'delete',
+            'insert',
+            'insertIniData',
+            'orderStatus',
+            'showSalesByMonth',
+            'insertUser',
+            'listUser',
         ];
         
         foreach($pages as $pageName) {
