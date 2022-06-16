@@ -37,27 +37,25 @@
 	<h4>下記の書籍をカートに追加しました。</h4>
 	<br>
 	<table>
-		@foreach($addBookInfo as $insertCartData)
-    		<tr>
-    			<th>ISBN</th>
-    			<td>{{ $insertCartData['isbn'] }}</td>
-    		</tr>
-    		<tr>
-    			<th>TITLE</th>
-    			<td>{{ $insertCartData['title'] }}</td>
-    		</tr>
-    		<tr>
-    			<th>価格</th>
-    			<td>{{ $insertCartData['price'] }}円</td>
-    		</tr>
-    		<tr>
-    			<th>購入数</th>
-    			<td>{{ $insertCartData['quantity'] }}冊</td>
-    		</tr>
-		@endforeach
+		<tr>
+			<th>ISBN</th>
+			<td>{{ $addBookInfo['isbn'] }}</td>
+		</tr>
+		<tr>
+			<th>TITLE</th>
+			<td>{{ $addBookInfo['title'] }}</td>
+		</tr>
+		<tr>
+			<th>価格</th>
+			<td>{{ $addBookInfo['price'] }}円</td>
+		</tr>
+		<tr>
+			<th>購入数</th>
+			<td>{{ $addBookInfo['quantity'] }}冊</td>
+		</tr>
 	</table>
 	<br>
-	<form action="/showCart" method="post">
+	<form action="/showCart" method="get">
 		<input type="submit" value="カート確認">
 	</form>
 @endsection

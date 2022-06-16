@@ -14,7 +14,7 @@ class InsertIntoCartController extends Controller
         
         //取得したISBNの書籍情報を検索して取得
         $addBookInfo_obj = Bookinfo::where('isbn', '=', $insertIsbn)->first();
-        $addBookInfo[] = [
+        $addBookInfo = [
             'isbn' => $addBookInfo_obj->isbn,
             'title' => $addBookInfo_obj->title,
             'price' => $addBookInfo_obj->price,
@@ -22,7 +22,15 @@ class InsertIntoCartController extends Controller
         ];
         
         //その書籍情報をセッションに格納
-        $request->session()->put('cartInfo', $addBookInfo);
+//         if(!$request->session()->has('cartInfo')) {
+//             //cartInfoパラメータのセッションが存在しない時はput
+//             $request->session()->put('cartInfo', $addBookInfo);
+//         } else {
+//             //既にcartInfoパラメータのセッションが存在している時はpush
+//             $request->session()->push('cartInfo', $addBookInfo);
+//         }
+        $request->session()->push('cartInfo', $addBookInfo);
+//         dd($request->session()->get('cartInfo'));
         
 //         return view('insertIntoCart', compact('addBookInfo'));
         return view('insertIntoCart', ['addBookInfo' => $addBookInfo]);
