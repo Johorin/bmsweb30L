@@ -85,6 +85,8 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/insertUser', 'App\Http\Controllers\InsertUserController@index');
     //ログアウト画面へのの遷移
     Route::get('/logout', 'App\Http\Controllers\LogoutController@index');
+    //カート追加画面へのの遷移
+    Route::post('/insertIntoCart', 'App\Http\Controllers\InsertIntoCartController@index');
     
     //管理者のみ閲覧できるページにアクセス制限
     Route::group(['middleware' => ['rejectaccess']], function() {
@@ -126,3 +128,6 @@ Route::group(['middleware' => ['auth']], function(){
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//セッション(カートの中身)リセット用ルーティング
+Route::get('/resetCart', 'App\Http\Controllers\ResetCartController@index');

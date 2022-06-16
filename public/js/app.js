@@ -1017,6 +1017,94 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./resources/sass/insertIniData.scss":
+/*!*******************************************!*\
+  !*** ./resources/sass/insertIniData.scss ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9pbnNlcnRJbmlEYXRhLnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3MvaW5zZXJ0SW5pRGF0YS5zY3NzPzFjMGIiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/insertIniData.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/showCart.scss":
+/*!**************************************!*\
+  !*** ./resources/sass/showCart.scss ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9zaG93Q2FydC5zY3NzLmpzIiwibWFwcGluZ3MiOiI7QUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9zYXNzL3Nob3dDYXJ0LnNjc3M/NDY0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/sass/showCart.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/orderHistory.scss":
+/*!******************************************!*\
+  !*** ./resources/sass/orderHistory.scss ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9vcmRlckhpc3Rvcnkuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9vcmRlckhpc3Rvcnkuc2Nzcz85ZDRhIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/orderHistory.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/insertUser.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/insertUser.scss ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9pbnNlcnRVc2VyLnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3MvaW5zZXJ0VXNlci5zY3NzPzY1NmEiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/insertUser.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/insert.scss":
+/*!************************************!*\
+  !*** ./resources/sass/insert.scss ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9pbnNlcnQuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9pbnNlcnQuc2Nzcz9mNTBmIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/insert.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/delete.scss":
+/*!************************************!*\
+  !*** ./resources/sass/delete.scss ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9kZWxldGUuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9kZWxldGUuc2Nzcz9lNTBlIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/delete.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/orderStatus.scss":
+/*!*****************************************!*\
+  !*** ./resources/sass/orderStatus.scss ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9vcmRlclN0YXR1cy5zY3NzLmpzIiwibWFwcGluZ3MiOiI7QUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9zYXNzL29yZGVyU3RhdHVzLnNjc3M/MDk3MSJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/sass/orderStatus.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/showSalesByMonth.scss":
+/*!**********************************************!*\
+  !*** ./resources/sass/showSalesByMonth.scss ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9zaG93U2FsZXNCeU1vbnRoLnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3Mvc2hvd1NhbGVzQnlNb250aC5zY3NzP2I1NWUiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/showSalesByMonth.scss\n");
+
+/***/ }),
+
 /***/ "./resources/sass/layout.scss":
 /*!************************************!*\
   !*** ./resources/sass/layout.scss ***!
@@ -1221,6 +1309,14 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			"css/list": 0,
 /******/ 			"css/menu": 0,
 /******/ 			"css/layout": 0,
+/******/ 			"css/showSalesByMonth": 0,
+/******/ 			"css/orderStatus": 0,
+/******/ 			"css/delete": 0,
+/******/ 			"css/insert": 0,
+/******/ 			"css/insertUser": 0,
+/******/ 			"css/orderHistory": 0,
+/******/ 			"css/showCart": 0,
+/******/ 			"css/insertIniData": 0,
 /******/ 			"css/listUser": 0,
 /******/ 			"css/deleteUser": 0
 /******/ 		};
@@ -1272,14 +1368,22 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/layout.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/menu.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/list.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/detail.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/update.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/deleteUser.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/listUser.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/showSalesByMonth","css/orderStatus","css/delete","css/insert","css/insertUser","css/orderHistory","css/showCart","css/insertIniData","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/showSalesByMonth","css/orderStatus","css/delete","css/insert","css/insertUser","css/orderHistory","css/showCart","css/insertIniData","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/layout.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/showSalesByMonth","css/orderStatus","css/delete","css/insert","css/insertUser","css/orderHistory","css/showCart","css/insertIniData","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/menu.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/showSalesByMonth","css/orderStatus","css/delete","css/insert","css/insertUser","css/orderHistory","css/showCart","css/insertIniData","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/list.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/showSalesByMonth","css/orderStatus","css/delete","css/insert","css/insertUser","css/orderHistory","css/showCart","css/insertIniData","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/detail.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/showSalesByMonth","css/orderStatus","css/delete","css/insert","css/insertUser","css/orderHistory","css/showCart","css/insertIniData","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/update.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/showSalesByMonth","css/orderStatus","css/delete","css/insert","css/insertUser","css/orderHistory","css/showCart","css/insertIniData","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/deleteUser.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/showSalesByMonth","css/orderStatus","css/delete","css/insert","css/insertUser","css/orderHistory","css/showCart","css/insertIniData","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/listUser.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/showSalesByMonth","css/orderStatus","css/delete","css/insert","css/insertUser","css/orderHistory","css/showCart","css/insertIniData","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/insertIniData.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/showSalesByMonth","css/orderStatus","css/delete","css/insert","css/insertUser","css/orderHistory","css/showCart","css/insertIniData","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/showCart.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/showSalesByMonth","css/orderStatus","css/delete","css/insert","css/insertUser","css/orderHistory","css/showCart","css/insertIniData","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/orderHistory.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/showSalesByMonth","css/orderStatus","css/delete","css/insert","css/insertUser","css/orderHistory","css/showCart","css/insertIniData","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/insertUser.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/showSalesByMonth","css/orderStatus","css/delete","css/insert","css/insertUser","css/orderHistory","css/showCart","css/insertIniData","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/insert.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/showSalesByMonth","css/orderStatus","css/delete","css/insert","css/insertUser","css/orderHistory","css/showCart","css/insertIniData","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/delete.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/showSalesByMonth","css/orderStatus","css/delete","css/insert","css/insertUser","css/orderHistory","css/showCart","css/insertIniData","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/orderStatus.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/update","css/detail","css/list","css/menu","css/layout","css/showSalesByMonth","css/orderStatus","css/delete","css/insert","css/insertUser","css/orderHistory","css/showCart","css/insertIniData","css/listUser","css/deleteUser"], () => (__webpack_require__("./resources/sass/showSalesByMonth.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

@@ -13,6 +13,20 @@ input {
 	text-align: left;;
 }
 
+table,
+tr,
+th,
+td {
+	vertical-align: middle;
+}
+
+table {
+	th {
+		background-color: teal;
+		color: white;
+	}
+}
+
 .titleWrapper {
 	background-color: rgb(220,220,220);
 	h2#title {

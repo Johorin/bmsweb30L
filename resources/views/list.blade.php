@@ -65,9 +65,15 @@
         		<tr>
         			<td><a href="/detail?isbn={{$val['isbn']}}">{{$val['isbn']}}</a></td>
         			<td>{{$val['title']}}</td>
-        			<td>{{$val['price']}}</td>
-        			<td><input type="number" name="quantity" value="{{ old('quantity') }}" /></td>
-        			<td><input type="submit" value="カートに入れる" /></td>
+        			<td>{{$val['price']}}円</td>
+        			<form action="/insertIntoCart" method="post">
+        				@csrf
+            			<td><input type="number" name="quantity" value="{{ old('quantity') }}" required /></td>
+            			<td>
+            				<input type="hidden" name="insertIsbn" value="{{$val['isbn']}}">
+            				<input type="submit" value="カートに入れる" />
+            			</td>
+        			</form>
         		</tr>
     		@endforeach
     	</table>

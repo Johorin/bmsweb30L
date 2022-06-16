@@ -5,6 +5,14 @@
     "/css/list.css": "/css/list.css",
     "/css/menu.css": "/css/menu.css",
     "/css/layout.css": "/css/layout.css",
+    "/css/showSalesByMonth.css": "/css/showSalesByMonth.css",
+    "/css/orderStatus.css": "/css/orderStatus.css",
+    "/css/delete.css": "/css/delete.css",
+    "/css/insert.css": "/css/insert.css",
+    "/css/insertUser.css": "/css/insertUser.css",
+    "/css/orderHistory.css": "/css/orderHistory.css",
+    "/css/showCart.css": "/css/showCart.css",
+    "/css/insertIniData.css": "/css/insertIniData.css",
     "/css/listUser.css": "/css/listUser.css",
     "/css/deleteUser.css": "/css/deleteUser.css"
 }

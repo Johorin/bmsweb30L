@@ -19,6 +19,12 @@ class Bookinfo extends Model
     public $incrementing = false;
     //timestamps関連のレコードの自動更新をオフ
     public $timestamps = false;
+    //次のデータの挿入を許可する
+    protected $fillable = [
+        'isbn',
+        'title',
+        'price',
+    ];
     
     /*
      * 関数名：selectByIsbn
