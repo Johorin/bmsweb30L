@@ -1,6 +1,3 @@
-<?php 
-dd(isset($errMsg));
-?>
 <!-- レイアウトの継承 -->
 @extends('layouts.bms')
 

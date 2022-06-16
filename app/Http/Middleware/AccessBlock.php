@@ -27,7 +27,9 @@ class AccessBlock
             //strpos関数は第一引数の健作対象文字列に対して第二引数の文字列が含まれているか判定
             if(strpos(url()->current(), $pageName) && (Auth::user()->authority === 1)) {
                 $errMsg = '権限の無いページにはアクセスできません。';
-                return redirect('error')->with('errMsg', $errMsg);
+//                 return redirect('error')->with('errMsg', $errMsg);
+                return response(view('error', ['errMsg' => $errMsg]));
+//                 return response(redirect('error')->with('errMsg', $errMsg));
             }
         }
         
