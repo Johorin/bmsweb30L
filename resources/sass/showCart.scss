@@ -1,2 +1,19 @@
 @charset "UTF-8";
 
+table#main {
+	th {
+		width: 20vw;
+		background-color: teal;
+	}
+}
+
+table#total {
+	th {
+		width: 10vw;
+		background-color: teal;
+	}
+	td {
+		width: 10vw;
+		padding-left: 10px;
+	}
+}

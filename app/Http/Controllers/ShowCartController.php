@@ -12,8 +12,10 @@ class ShowCartController extends Controller
         
         //カートの中の書籍の価格を合計
         $total = 0;
-        foreach($cartContents as $cartRecord) {
-            $total += $cartRecord['price'] * $cartRecord['quantity'];
+        if(isset($cartContents)) {
+            foreach($cartContents as $cartRecord) {
+                $total += $cartRecord['price'] * $cartRecord['quantity'];
+            }
         }
         
         //showCartビューに渡す配列を用意

@@ -34,33 +34,38 @@
 @section('main')
 	@parent
 	<br><br><br>
-	<!-- テーブル部分 -->
-	<table>
-		<tr>
-			<th style="width: 20vw; background-color: grey;">ISBN</th>
-			<th style="width: 20vw; background-color: grey;">TITLE</th>
-			<th style="width: 20vw; background-color: grey;">価格</th>
-			<th style="width: 20vw; background-color: grey;">購入数</th>
-			<th style="width: 20vw; background-color: grey;">削除</th>
-		</tr>
-		@foreach($cartContentsAndTotal['cartContents'] as $cartRecord)
+	@if(isset($cartContentsAndTotal['cartContents']))
+    	<!-- テーブル部分 -->
+    	<table id="main">
     		<tr>
-    			<td><a href="/detail?isbn={{ $cartRecord['isbn'] }}">{{ $cartRecord['isbn'] }}</a></td>
-    			<td>{{ $cartRecord['title'] }}</td>
-    			<td>{{ $cartRecord['price'] }}円</td>
-    			<td>{{ $cartRecord['quantity'] }}冊</td>
-    			<td><a href="/deleteCartRecord?isbn={{ $cartRecord['isbn'] }}">削除</a></td>
+    			<th>ISBN</th>
+    			<th>TITLE</th>
+    			<th>価格</th>
+    			<th>購入数</th>
+    			<th>削除</th>
     		</tr>
-		@endforeach
-	</table>
+    		@foreach($cartContentsAndTotal['cartContents'] as $cartRecord)
+        		<tr>c
+        			<td><a href="/detail?isbn={{ $cartRecord['isbn'] }}">{{ $cartRecord['isbn'] }}</a></td>
+        			<td>{{ $cartRecord['title'] }}</td>
+        			<td>{{ $cartRecord['price'] }}円</td>
+        			<td>{{ $cartRecord['quantity'] }}冊</td>
+        			<td><a href="/deleteCartRecord?isbn={{ $cartRecord['isbn'] }}">削除</a></td>
+        		</tr>
+    		@endforeach
+    	</table>
 	<br><br>
-	<hr style="border: 2px solid grey;">
-	<table>
+	<hr>
+	<br><br>
+	<table id="total">
 		<tr>
-			<th style="width: 10vw; background-color: lightblue;">合計</th>
+			<th>合計</th>
 			<td>{{ $cartContentsAndTotal['total'] }}円</td>
 		</tr>
 	</table>
+    @else
+    	<p>カートは空です。購入する書籍を追加してください。</p>
+    @endif
 	<br><br><br>
 	<form action="/buyConfirm" method="post">
 		<input type="submit" name="buyButton" value="購入">
