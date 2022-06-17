@@ -23,6 +23,15 @@ class Orderinfo extends Model
     
     //bookinfoテーブルに対するリレーションを定義
     public function book() {
-        return $this->belongsTo('App\Models\Bookinfo');  //多対一
+        //外部キー名が'リレーションメソッド名_id'でない場合や
+        //親モデルの主キーがidを採用していない場合は
+        //それぞれ第２引数、第３引数のように指定する必要がある
+        //（こうしないとうまくリレーション先のデータを取ってこれない）
+        return $this->belongsTo('App\Models\Bookinfo', 'isbn', 'isbn');  //多対一
+    }
+    
+    //usersテーブルに対するリレーションを定義
+    public function user() {
+        return $this->belongsTo('App\Models\User');  //多対一
     }
 }
