@@ -30,3 +30,4 @@ mix.sass('resources/sass/delete.scss', 'public/css').sourceMaps();
 mix.sass('resources/sass/orderStatus.scss', 'public/css').sourceMaps();
 mix.sass('resources/sass/showSalesByMonth.scss', 'public/css').sourceMaps();
 mix.sass('resources/sass/insertIntoCart.scss', 'public/css').sourceMaps();
+mix.sass('resources/sass/buyConfirm.scss', 'public/css').sourceMaps();

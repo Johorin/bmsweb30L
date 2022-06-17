@@ -83,10 +83,12 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/orderHistory', 'App\Http\Controllers\OrderHistoryController@index');
     //パスワード変更画面への遷移
     Route::get('/insertUser', 'App\Http\Controllers\InsertUserController@index');
-    //ログアウト画面へのの遷移
+    //ログアウト画面への遷移
     Route::get('/logout', 'App\Http\Controllers\LogoutController@index');
-    //カート追加画面へのの遷移
+    //カート追加画面への遷移
     Route::post('/insertIntoCart', 'App\Http\Controllers\InsertIntoCartController@index');
+    //購入確認画面への遷移
+    Route::post('/buyConfirm', 'App\Http\Controllers\BuyConfirmController@index');
     
     //管理者のみ閲覧できるページにアクセス制限
     Route::group(['middleware' => ['rejectaccess']], function() {

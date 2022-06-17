@@ -13,6 +13,13 @@ class Orderinfo extends Model
     protected $primaryKey = 'orderno';
     //timestamps関連のレコードの自動更新をオフ
     public $timestamps = false;
+    //次のデータの挿入を許可する
+    protected $fillable = [
+        'user_id',
+        'isbn',
+        'quantity',
+        'date',
+    ];
     
     //bookinfoテーブルに対するリレーションを定義
     public function book() {

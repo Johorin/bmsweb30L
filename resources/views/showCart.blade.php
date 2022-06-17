@@ -45,7 +45,7 @@
     			<th>削除</th>
     		</tr>
     		@foreach($cartContentsAndTotal['cartContents'] as $cartRecord)
-        		<tr>c
+        		<tr>
         			<td><a href="/detail?isbn={{ $cartRecord['isbn'] }}">{{ $cartRecord['isbn'] }}</a></td>
         			<td>{{ $cartRecord['title'] }}</td>
         			<td>{{ $cartRecord['price'] }}円</td>
@@ -68,6 +68,8 @@
     @endif
 	<br><br><br>
 	<form action="/buyConfirm" method="post">
+		@csrf
+		<input type="hidden" name="total" value="{{ $cartContentsAndTotal['total'] }}">
 		<input type="submit" name="buyButton" value="購入">
 	</form>
 @endsection
